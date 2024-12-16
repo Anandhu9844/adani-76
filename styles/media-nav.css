@@ -1,0 +1,27 @@
+/* Media Navigation Styles */
+.media-nav {
+  padding: 2rem 0;
+  background: #f8fafc;
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.media-link {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.media-link:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,66 @@
+/* Image Slider Styles */
+.slider-section {
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.image-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.slider-track.forward {
+  animation: scrollForward 30s linear infinite;
+}
+
+.slider-track.backward {
+  animation: scrollBackward 30s linear infinite;
+}
+
+.slider-item {
+  flex-shrink: 0;
+  width: 18rem;
+  height: 12rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.slider-item:hover {
+  transform: scale(1.05);
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scrollForward {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollBackward {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
