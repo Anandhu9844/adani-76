@@ -7,24 +7,43 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="gallery.css" />
     <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="styles/password.css" />
     <script type="module" src="gallery.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-      <h2 styles="color : black;">Password Protected Page</h2>
-<br>
-<p>
-"A name that matters, written the way it deserves, followed by the year she stepped into this world."</p>
 
-    <!-- Password Form -->
-    <form id="passwordForm">
-        <label for="password">Enter Password:</label>
-        <input type="password" id="password" placeholder="Enter your password" required>
-        <button type="submit">Submit</button>
-    </form>
-    <!-- Hidden Content -->
+
+
+
+
+
+
+    <div class="password-container">
+      <form id="passwordForm" class="password-form">
+        <h2>Password Protected Gallery</h2>
+        <p>"A name that matters, written the way it deserves, followed by the year she stepped into this world."</p>
+        <input 
+          type="password" 
+          id="password" 
+          class="password-input" 
+          placeholder="Enter password" 
+          required
+        >
+        <button type="submit" class="password-submit">Enter Gallery</button>
+        <p id="errorMessage" class="error-message"></p>
+      </form>
+    </div>
+
     <div id="protectedContent" style="display: none;">
-      
+          
+
+
+
+
+
+
+
+
     <nav>
       <!-- Navigation will be replaced by JavaScript -->
     </nav>
@@ -74,27 +93,30 @@
         </div>
       </footer>
     </main>
-      </div>
 
-    <script>
-        // JavaScript for Password Validation
-        document.getElementById("passwordForm").addEventListener("submit", function (e) {
-            e.preventDefault(); // Prevent form submission
 
-            // Predefined password
-            const correctPassword = "Kunjumon@1970";
 
-            // User-entered password
-            const enteredPassword = document.getElementById("password").value;
 
-            // Check if password is correct
-            if (enteredPassword === correctPassword) {
-                document.getElementById("protectedContent").style.display = "block"; // Show content
-                document.getElementById("passwordForm").style.display = "none"; // Hide form
-            } else {
-                alert("Incorrect password. Please try again."); // Show error message
-            }
-        });
-    </script>
+  </div>
+
+  <script>
+    document.getElementById('passwordForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const password = document.getElementById('password').value;
+      const correctPassword = 'Kunjumon@1970';
+      
+      if (password === correctPassword) {
+        document.querySelector('.password-container').style.display = 'none';
+        document.getElementById('protectedContent').style.display = 'block';
+      } else {
+        document.getElementById('errorMessage').textContent = 'Incorrect password. Please try again.';
+        document.getElementById('password').value = '';
+      }
+    });
+  </script>
+
+
+
+
   </body>
 </html>
