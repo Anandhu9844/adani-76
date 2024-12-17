@@ -31,7 +31,7 @@ export function createNavigation() {
   
   const links = [
     { text: 'Home', href: '/' },
-    { text: 'About', href: '/page2.html' },
+    { text: 'About', href: '/contact.html' },
     { text: 'Contact', href: '#', id: 'contactLink' }
   ];
 
