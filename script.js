@@ -148,3 +148,19 @@ function createImageSlider() {
       }
     });
   });
+  
+  
+  
+   document.getElementById('passwordForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const password = document.getElementById('password').value;
+      const correctPassword = 'Kunjumon@1970';
+      
+      if (password === correctPassword) {
+        document.querySelector('.password-container').style.display = 'none';
+        document.getElementById('protectedContent').style.display = 'block';
+      } else {
+        document.getElementById('errorMessage').textContent = 'Incorrect password. Please try again.';
+        document.getElementById('password').value = '';
+      }
+    });
