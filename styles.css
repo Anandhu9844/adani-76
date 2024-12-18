@@ -556,7 +556,7 @@ main {
   display: flex;
   gap: 20px;
   position: absolute;
-  animation: marquee 30s linear infinite;
+  animation: marquee 90s linear infinite;
   white-space: nowrap;
   will-change: transform;
   top: 50%;
@@ -564,7 +564,7 @@ main {
 }
 
 .moving-boxes-track:hover {
-  animation-duration: 30s;
+  animation-duration: 90s;
 }
 
 .moving-box {
@@ -580,7 +580,7 @@ main {
 }
 
 .moving-box:hover {
-  transform: scale(2);
+  transform: scale(1.7);
   z-index: 10;
 }
 
@@ -596,7 +596,7 @@ main {
   bottom: 10px;
   right: 10px;
   color: white;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background: rgba(0, 0, 0, 0.5);
@@ -611,8 +611,8 @@ main {
   background: rgba(255, 255, 255, 0.9);
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 27px;
+  height: 27px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -628,8 +628,8 @@ main {
 }
 
 .heart-icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   fill: #666;
   transition: fill 0.3s ease, transform 0.3s ease;
 }
