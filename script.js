@@ -154,7 +154,7 @@ function createImageSlider() {
    document.getElementById('passwordForm').addEventListener('submit', function(e) {
       e.preventDefault();
       const password = document.getElementById('password').value;
-      const correctPassword = 'Kunjumon@1970';
+      const correctPassword = 'Varalekhshmi@2011';
       
       if (password === correctPassword) {
         document.querySelector('.password-container').style.display = 'none';
