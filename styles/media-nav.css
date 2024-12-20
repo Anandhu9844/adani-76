@@ -1,7 +1,8 @@
 /* Media Navigation Styles */
 .media-nav {
   padding: 2rem 0;
-  background: #f8fafc;
+  background: #000000F9;
+  ;
 }
 
 .media-links {
@@ -13,7 +14,7 @@
 .media-link {
   font-size: 2rem;
   font-weight: bold;
-  color: #1e293b;
+  color: #8d939b;
   text-decoration: none;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -21,7 +22,8 @@
 }
 
 .media-link:hover {
-  background: #2563eb;
+  background:  #000000F9;
+  ;
   color: white;
   transform: translateY(-2px);
 }
