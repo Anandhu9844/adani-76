@@ -11,7 +11,7 @@ export function createNavigation() {
   const logoSection = document.createElement('div');
   logoSection.className = 'logo-section';
   const logoImg = document.createElement('img');
-  logoImg.src = '/assets/logo.svg';
+  logoImg.src = '/assets/indexlogo.png';
   logoImg.alt = 'Logo';
   logoSection.appendChild(logoImg);
 
@@ -31,7 +31,7 @@ export function createNavigation() {
   
   const links = [
     { text: 'Home', href: '/' },
-    { text: 'About', href: '/contact.html' },
+    { text: 'About', href: '/page2.html' },
     { text: 'Contact', href: '#', id: 'contactLink' }
   ];
 
