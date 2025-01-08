@@ -10,7 +10,7 @@ function createGalleryItems() {
   const galleryGrid = document.getElementById('gallery-grid');
   
   // Create 50 gallery items
-  for (let i = 1; i <= 12; i++) {
+  for (let i = 1; i <= 13; i++) {
     const item = document.createElement('div');
     item.className = 'gallery-item';
     
