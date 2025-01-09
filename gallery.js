@@ -15,7 +15,7 @@ function createGalleryItems() {
     item.className = 'gallery-item';
     
     const img = document.createElement('img');
-    img.src = `/assets/gallery/photo${i}.jpg`;
+    img.src = `/assets/gallery/phomto${i}.jpg`;
     img.alt = `Gallery Photo ${i}`;
     img.className = 'gallery-image';
     
