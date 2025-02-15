@@ -9,6 +9,21 @@
     <script type="module" src="script.js"></script>
     <link rel="stylesheet" href="styles/password.css" />
     <script type="module" src="gallery.js"></script>
+    <script>
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault(); // Disable right-click
+});
+
+document.addEventListener("keydown", function (event) {
+    if (
+        event.key === "F12" || // Disable F12
+        (event.ctrlKey && event.shiftKey && event.key === "I") || // Disable Ctrl+Shift+I (Inspect Element)
+        (event.ctrlKey && event.key === "U") // Disable Ctrl+U (View Source)
+    ) {
+        event.preventDefault();
+    }
+});
+    </script>
   </head>
   <body>
 
